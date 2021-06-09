@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Table template</title>
+ 
+</head>
+
+<style>
+    html {
+        font-family: sans-serif;
+    }
+    
+    table {
+        /* border-collapse: collapse; */
+        /* border: 2px solid rgb(200,200,200); */
+        letter-spacing: 1px;
+        font-size: 0.8rem;
+        
+    }
+    td, th {
+        border: 1px solid goldenrod;
+        padding: 20px 20px;
+        text-align: center;
+        /* background-color: yellow; */
+    }
+    th {
+        background-color: gold;
+
+    }
+
+</style>
+  
+  <body>
+
+    <table id="tb3" style= "border: pink 5px solid" height="600px">
+        <colgroup>
+            <col style="background-color: yellow" span="2">
+          </colgroup>
+        <!-- tr é a linha, td a coluna, 
+            colspan é pra expandir colunas, 
+            rowspan é pra expandir linha-->
+        <tr>
+            <td style="width: 300px;">c1</td>
+            <td colspan="2" style="width: 400px;">c2</td>
+        </tr>
+        <tr>
+            <td >c1</td>
+            <td style="background-color: pink;">c2</td>
+            <td style="background-color: orange;">c3</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2"><figure style="text-align: center">
+                <img src="unicornio.jpg"
+                style="width: 100px">
+            </figure></td>
+            <td >c2</td>
+            <td style="background-color: pink;border: red solid 3px;">c3</td>
+        </tr>
+        <tr>
+            <td >c2</td>
+            <td style="background-color: orange;">c3</td>
+        </tr>
+
+    </table>
+
+
+
+  </body>
+</html>
+	

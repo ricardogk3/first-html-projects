@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Table template</title>
+ 
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+        
+        table {
+            /* border-collapse: collapse; */
+            border: 2px solid rgb(200,200,200);
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+        }
+        td, th {
+            border: 1px solid rgb(190,190,190);
+            padding: 10px 20px;
+        }
+        th {
+            background-color: rgb(190,190,190);
+        }
+        td {
+            text-align: center;
+        }
+        tr:nth-child(even) td {
+            background-color: rgb(250,250,250);
+        }
+        tr:nth-child(odd) td {
+            background-color: rgb(245,245,245);
+        }
+        caption {
+            padding: 10px;
+        }
+            
+    </style>
+
+</head>
+
+
+  
+  <body>
+    <h2>Tabela 1</h2>
+    
+    <table id="tb3">
+        <!-- tr é a linha, td a coluna -->
+        <tr>
+            <td colspan="4">Website Logo</td>
+        </tr>
+        <tr>
+            <td colspan="3">Content Area</td>
+            <td>Menu</td>
+        </tr>
+        <tr>
+            <td colspan ="4">Footer Bar</td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <h2>Tabela 2</h2>
+    
+    <table id="tb3">
+        <!-- tr é a linha, td a coluna -->
+        <tr>
+            <td colspan="4">Website Name</td>
+        </tr>
+        <tr>
+            <td>Menu</td>
+            <td colspan="2">Content Area</td>
+            <td>ADVT</td>
+        </tr>
+        <tr>
+            <td colspan ="4">Footer</td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+
+
+
+    <h2>Tabela 3</h2>
+
+    <table id="tb3">
+        <!-- tr é a linha, td a coluna -->
+        <tr>
+            <td>Header Logo</td>
+            <td colspan="4">Header Banner</td>
+        </tr>
+        <tr>
+            <td colspan="4">Header Bar</td>
+        </tr>
+        <tr>
+            <td colspan="4" height="5px"></td>
+        </tr>
+        <tr>
+            <td rowspan="3">Left Blocks</td>
+            <td colspan="2">Center-Center Blocks</td>
+            <td rowspan="3">Right Blocks</td>
+        </tr>
+        <tr>
+            <td >Center-Left Blocks</td>
+            <td >Center-Right Blocks</td>
+        </tr>
+        <tr>
+            <td colspan="2">Module Contents</td>
+        </tr>
+        <tr>
+            <td colspan="4" height="5px"></td>
+        </tr>
+        <tr>
+            <td colspan ="4">Footer Bar</td>
+        </tr>
+
+    </table>
+
+
+
+  </body>
+</html>
+	

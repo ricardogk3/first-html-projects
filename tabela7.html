@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Table template</title>
+ 
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+        
+        table {
+            /* border-collapse: collapse; */
+            border: 3px solid rgb(200,200,200);
+            letter-spacing: 5px;
+            font-size: 1rem;
+        }
+        td, th {
+            border: 3px solid black;
+            padding: 10px 20px;
+        }
+        th {
+            background-color: rgb(190,190,190);
+        }
+        td {
+            text-align: center;
+        }
+        tr:nth-child(even) td {
+            background-color: rgb(250,250,250);
+        }
+        tr:nth-child(odd) td {
+            background-color: rgb(245,245,245);
+        }
+        caption {
+            padding: 10px;
+        }
+            
+    </style>
+
+</head>
+  
+  <body>
+
+
+
+    <table  style= "border: black 3px solid" width="100%" height=100%>
+        <!-- tr é a linha, td a coluna, 
+            colspan é pra expandir colunas, 
+            rowspan é pra expandir linha-->
+        <tr>
+            <td colspan="2" >
+                <figure style="text-align: left">
+                    <img src="cabecalho.jpg"
+                    style="width: 20%">
+                </figure>
+                Cabeça de Alho</td>
+        </tr>
+
+        <tr>
+            <td colspan="2" >Link para a página do Google:<br />
+          <a href="https://www.google.com/">https://www.google.com/</a>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td >
+                <h1>Abaixo as receitas mais deliciosas com cabeça de alho:</h1>
+                <a href="https://www.tudogostoso.com.br/receita/199609-pao-de-alho-com-linguica.html">Pão de alho e linguiça</a><br />
+                <a href="https://www.tudogostoso.com.br/receita/779-macarrao-alho-e-oleo.html">Macarrão ao alho e óleo</a><br />
+                <a href="https://www.tudogostoso.com.br/receita/145344-creme-de-alho-pao-de-alho.html">Creme de alho</a><br />
+                <a href="https://www.tudogostoso.com.br/receita/169715-hamburguer-com-toque-de-alho.html">Hambúrguer com toque de alho</a><br />
+                <a href="https://www.tudogostoso.com.br/receita/1514-molho-de-alho-ideal-para-comer-com-churrasco.html">Molho de alho para churrasco</a><br />
+                <a href="https://www.tudogostoso.com.br/receita/295-picanha-no-alho.html">Picanha no alho</a><br />
+                <a href="https://www.tudogostoso.com.br/receita/73384-pao-de-alho-fofinho.html">Pão de alho fofinho</a><br />
+                <a href="https://www.tudogostoso.com.br/receita/46416-pate-de-cenoura-e-alho.html">Patê de cenoura e alho</a><br />
+                <a href="https://www.tudogostoso.com.br/receita/172644-farfalle-com-ervilha-bacon-alho-e-creme-tipo-fraiche-calazans.html">Farfalle com ervilha, bacon e alho</a><br />
+                <p>Para mais receitas acesse:</p>
+
+                <a href="https://blog.tudogostoso.com.br/cardapios/receitas-faceis/receitas-com-alho/">Tudo Gostoso, Receitas Com Alho</a><br />
+                </td>
+            <td >    
+                <form action="/pagina-processa-dados-do-form" method="post">
+                <div>
+                    <label for="name">Nome:</label><br />
+                    <input type="text" id="name" /><br />
+                </div>
+                <div>
+                    <label for="mail">E-mail:</label><br />
+                    <input type="email" id="mail" /><br />
+                </div>
+                <div>
+                    <label for="msg">Mensagem:</label><br />
+                    <textarea id="msg"></textarea><br />
+                </div>
+                <div class="button">
+                    <button type="submit">Enviar sua mensagem</button><br />
+                </div>
+
+                <a href="enviar mensagem.html">Link para contato.</a>
+            </form>
+        </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" >Ricardo Kreutzer <br />
+                Novo Hamburgo - RS <br />
+                08/06/2021
+            </td>
+        </tr>
+    </table>
+
+
+
+  </body>
+</html>
+	
+	

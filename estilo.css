@@ -1,0 +1,64 @@
+ul {
+    margin: 0 auto;
+    /* margem  e centraliza*/
+    padding: 0;
+    /* Distancia da origem */
+    list-style: none;
+    width: 150px;
+    /* distancia do bloco */
+}
+
+ul li {
+    position: relative;
+}
+
+li ul {
+    position: absolute;
+    left: 149px;
+    /* distancia de uma lista para a outra lista */
+    top: 0;
+    display: none;
+    /* oculta o item  */
+}
+
+
+/* item da lista da lista */
+#lista2{
+    position: absolute;
+    left: 149px;
+    /* distancia de uma lista para a outra lista */
+    top: 0;
+    display: none;
+    /* oculta o item  */
+}
+
+
+ul li a {
+    display: block;
+    /* formata o estilo da lista em blocos */
+    text-decoration: none;
+    color: #E2144A;
+    background: #fff;
+    padding: 5px;
+    /* Distanciamento da lista, só aquele item da lista. 
+    distancia da caixa interna para a caixa externa  */
+    border: 1px solid #ccc;
+    /* borda externa */
+}
+
+li:hover ul { 
+    display: block; 
+}
+/* Faz o com que quando o item de uma 
+lista for passado pelo mouse tem que exibir uma lista */
+
+/* para fazer o item aparecer da lista dentro da lista do item */
+li ul li:hover #lista2{ 
+    display: block; 
+}
+
+ul li a:hover{
+    text-decoration:underline;
+    font-weight: bold;
+    background: #ccc;
+}
